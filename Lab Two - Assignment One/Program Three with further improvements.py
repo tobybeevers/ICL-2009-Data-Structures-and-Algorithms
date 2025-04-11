@@ -1,3 +1,30 @@
+"""
+Module:      ICL-2009 Data Structures & Algorithms
+Assignment:  Lab Task 2
+Program:     Program Two with Further Improvements (Cache)
+Description: This program allows users to input up to 10 numbers to check if they are prime. It introduces 
+             a caching mechanism to store previously checked numbers for faster subsequent checks, via a dictionary that 
+             stores the results of previously checked numbers. When the user enters a number to check if it's prime, the program first checks if the result for that number is already in the cache.This optimisation improves performance, especially when the same numbers are checked multiple times.
+Version:     V1 01/11/2024 by Toby Beevers
+             V2 01/02/2025 by Toby Beevers
+Test Cases:
+Make sure to test this program with a variety of inputs, such as:
+1. Negative numbers
+    Entry = 0.5         
+    Result = print("Invalid input. Please enter a number below 100.")
+2. Non-integer inputs (e.g., strings)
+    Entry = TEXT        
+    Result = print("Invalid input. Please enter a number below 100.")
+3. Valid prime numbers (e.g., 2, 3, 5, 7)
+    Entry = 2           
+    Result = print("The number 2 is a Prime Number."), in Green color
+4. Valid composite numbers (e.g., 4, 6, 8, 9)
+    Entry = 4           
+    Result = print("The number 4 is NOT a Prime Number."), in Red color
+5. Edge cases like 0 and 1
+    Entry = 0           Result = print("The number 0 is NOT a Prime Number.")
+    Entry = 1           Result = print("The number 1 is NOT a Prime Number.")
+"""
 class Colors:
     GREEN = '\033[32;1m'
     RED = '\033[31;1m'

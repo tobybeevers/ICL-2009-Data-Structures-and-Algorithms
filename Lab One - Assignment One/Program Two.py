@@ -1,26 +1,28 @@
-## Test Cases
-## Make sure to test this program with a variety of inputs, such as:
-
-  ## Negative numbers
-      ## Entry = 0.5         
-      ## Result = print("Invalid input. Please enter a positive integer.")
-
-  ## Non-integer inputs (e.g., strings)
-      ## Entry = TEXT        
-      ## Result = print("Invalid input. Please enter a positive integer.")
-
-  ## Valid prime numbers (e.g., 2, 3, 5, 7)
-      ## Entry = 2           
-      ## Result = print("The number 2 is a Prime Number."), in Green color
-
-  ## Valid composite numbers (e.g., 4, 6, 8, 9)
-      ## Entry = 4           
-      ## Result = print("The number 4 is NOT a Prime Number."), in Red color
-
-  ## Edge cases like 0 and 1
-      ## Entry = 0           Result = print("The number 0 is NOT a Prime Number.")
-      ## Entry = 1           Result = print("The number 1 is NOT a Prime Number.")
-
+"""
+Module:      ICL-2009 Data Structures & Algorithms
+Assignment:  Lab Task 1
+Program:     Program Two Prime Number Checker
+Description: This program .
+Version:     V1 01/10/2024 by Toby Beevers
+             V2 01/02/2025 by Toby Beevers
+Test Cases:
+Make sure to test this program with a variety of inputs, such as:
+1. Negative numbers
+    Entry = 0.5         
+    Result = print("Invalid input. Please enter a positive integer.")
+2. Non-integer inputs (e.g., strings)
+    Entry = TEXT        
+    Result = print("Invalid input. Please enter a positive integer.")
+3. Valid prime numbers (e.g., 2, 3, 5, 7)
+    Entry = 2           
+    Result = print("The number 2 is a Prime Number."), in Green color
+4. Valid composite numbers (e.g., 4, 6, 8, 9)
+    Entry = 4           
+    Result = print("The number 4 is NOT a Prime Number."), in Red color
+5. Edge cases like 0 and 1
+    Entry = 0           Result = print("The number 0 is NOT a Prime Number.")
+    Entry = 1           Result = print("The number 1 is NOT a Prime Number.")
+"""
 # Create Classes for colours and Styles
 class colors:
   GREEN = '\033[32;1m'
@@ -34,7 +36,7 @@ class styles:
 
 ## Print the Welcome message
 print()
-print ('Welcome to my Prime Number Checker V2')
+print(f"{styles.BOLD}{colors.GREEN}Welcome to my Prime Number Checker V2{colors.END}{styles.END}")
 print()
 
 ## Main Program
